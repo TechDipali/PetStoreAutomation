@@ -8,7 +8,7 @@ import io.restassured.response.Response;
 
 public class UserEndPoints2 {
 	
-	// Create method to get data from properties file 
+	// Create method to get data from properties file .
 	public static ResourceBundle getURL()
 	{
 		ResourceBundle routes= ResourceBundle.getBundle("routes"); // name of the properties file
