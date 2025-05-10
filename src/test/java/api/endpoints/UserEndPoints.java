@@ -23,7 +23,7 @@ public class UserEndPoints {
 	   Response response=given()
 			   .pathParam("UserName", userName)
 		.when()
-		.get(Routes.Get_URL);
+		.get(Routes.get_URL);
 	   
 	   return response;
 	}
@@ -36,7 +36,7 @@ public class UserEndPoints {
 		.accept("application/json")
         .body(payload)
 		.when()
-		.put(Routes.Put_URL);
+		.put(Routes.put_URL);
 	   
 	   return response;
 	}
@@ -46,7 +46,7 @@ public class UserEndPoints {
 	   Response response=given()
 			   .pathParam("UserName", userName)
 		.when()
-		.delete(Routes.Delete_URL);
+		.delete(Routes.delete_URL);
 	   
 	   return response;
 	}

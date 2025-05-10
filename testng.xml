@@ -9,7 +9,7 @@
   <test thread-count="5" name="Test">
     <classes>
   <!--      <class name="api.test.UserTest"/> -->
-      <class name="api.test.UserTest2"/>
+      <class name="api.test.StoreTest"/>
  <!--   <class name="api.test.DDTests"/>  --> 
     </classes>
   </test> <!-- Test -->

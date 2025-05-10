@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.371 s - in TestSuite
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.61 s <<< FAILURE! - in TestSuite
+api.test.StoreTest.testStorePost  Time elapsed: 0.518 s  <<< FAILURE!
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.github.javafaker.Number and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: api.paylods.Store["quantity"])
+	at api.test.StoreTest.testStorePost(StoreTest.java:42)
+

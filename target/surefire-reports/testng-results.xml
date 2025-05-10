@@ -1,33 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-01T07:55:11 GMT-04:00" name="Suite" finished-at="2024-04-01T07:55:22 GMT-04:00" duration-ms="11755">
+  <suite started-at="2024-04-21T02:32:26 GMT-04:00" name="Suite" finished-at="2024-04-21T02:32:27 GMT-04:00" duration-ms="1015">
     <groups>
     </groups>
-    <test started-at="2024-04-01T07:55:11 GMT-04:00" name="Test" finished-at="2024-04-01T07:55:22 GMT-04:00" duration-ms="11755">
-      <class name="api.test.UserTest2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.UserTest2@43195e57]" started-at="2024-04-01T07:55:11 GMT-04:00" name="setUp" finished-at="2024-04-01T07:55:11 GMT-04:00" duration-ms="486" status="PASS">
+    <test started-at="2024-04-21T02:32:26 GMT-04:00" name="Test" finished-at="2024-04-21T02:32:27 GMT-04:00" duration-ms="1015">
+      <class name="api.test.StoreTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.test.StoreTest@2c1b194a]" started-at="2024-04-21T02:32:26 GMT-04:00" name="setUp" finished-at="2024-04-21T02:32:26 GMT-04:00" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUserPost()[pri:1, instance:api.test.UserTest2@43195e57]" started-at="2024-04-01T07:55:11 GMT-04:00" name="testUserPost" finished-at="2024-04-01T07:55:15 GMT-04:00" duration-ms="3657" status="PASS">
+        <test-method signature="testStorePost()[pri:0, instance:api.test.StoreTest@2c1b194a]" started-at="2024-04-21T02:32:26 GMT-04:00" name="testStorePost" finished-at="2024-04-21T02:32:27 GMT-04:00" duration-ms="507" status="FAIL">
+          <exception class="com.fasterxml.jackson.databind.exc.InvalidDefinitionException">
+            <message>
+              <![CDATA[No serializer found for class com.github.javafaker.Number and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: api.paylods.Store["quantity"])]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class com.github.javafaker.Number and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: api.paylods.Store["quantity"])
+at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1276)
+at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:400)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:71)
+at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:33)
+at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:728)
+at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:770)
+at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:480)
+at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:319)
+at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:3126)
+at com.fasterxml.jackson.databind.ObjectMapper$writeValue$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:148)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy:53)
+at io.restassured.internal.mapping.Jackson2Mapper.serialize(Jackson2Mapper.groovy)
+at io.restassured.mapper.ObjectMapper$serialize.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.mapping.ObjectMapping.serializeWithJackson2(ObjectMapping.groovy:217)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite$StaticMetaMethodSiteNoUnwrapNoCoerce.invoke(StaticMetaMethodSite.java:153)
+at org.codehaus.groovy.runtime.callsite.StaticMetaMethodSite.callStatic(StaticMetaMethodSite.java:102)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+at io.restassured.internal.mapping.ObjectMapping.serialize(ObjectMapping.groovy:154)
+at io.restassured.internal.mapping.ObjectMapping$serialize.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at io.restassured.internal.RequestSpecificationImpl.body(RequestSpecificationImpl.groovy:770)
+at api.endpoints.StoreEndPoints.PlacePetOrder(StoreEndPoints.java:15)
+at api.test.StoreTest.testStorePost(StoreTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.fasterxml.jackson.databind.exc.InvalidDefinitionException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testUserPost -->
-        <test-method signature="testGetUser()[pri:2, instance:api.test.UserTest2@43195e57]" started-at="2024-04-01T07:55:15 GMT-04:00" name="testGetUser" finished-at="2024-04-01T07:55:17 GMT-04:00" duration-ms="2303" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testGetUser -->
-        <test-method signature="testUpdateUser()[pri:3, instance:api.test.UserTest2@43195e57]" started-at="2024-04-01T07:55:17 GMT-04:00" name="testUpdateUser" finished-at="2024-04-01T07:55:20 GMT-04:00" duration-ms="2571" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testUpdateUser -->
-        <test-method signature="testDeleteUser()[pri:4, instance:api.test.UserTest2@43195e57]" started-at="2024-04-01T07:55:20 GMT-04:00" name="testDeleteUser" finished-at="2024-04-01T07:55:22 GMT-04:00" duration-ms="2579" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDeleteUser -->
-      </class> <!-- api.test.UserTest2 -->
+        </test-method> <!-- testStorePost -->
+      </class> <!-- api.test.StoreTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

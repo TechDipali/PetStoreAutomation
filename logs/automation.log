@@ -47,3 +47,19 @@
 01:04:24 07:55:20 [main] INFO  api.test.UserTest2 - *************User Updated*******************
 01:04:24 07:55:20 [main] INFO  api.test.UserTest2 - *************Deleting User*******************
 01:04:24 07:55:22 [main] INFO  api.test.UserTest2 - *************User Deleted*******************
+20:04:24 22:44:53 [main] INFO  api.test.UserTest2 - *************Creating User*******************
+20:04:24 22:44:57 [main] INFO  api.test.UserTest2 - *************User Created*******************
+20:04:24 22:44:57 [main] INFO  api.test.UserTest2 - *************Reading User*******************
+20:04:24 22:44:59 [main] INFO  api.test.UserTest2 - *************User Info Displayed*******************
+20:04:24 22:44:59 [main] INFO  api.test.UserTest2 - *************Updating User*******************
+20:04:24 22:45:01 [main] INFO  api.test.UserTest2 - *************User Updated*******************
+20:04:24 22:45:01 [main] INFO  api.test.UserTest2 - *************Deleting User*******************
+20:04:24 22:45:03 [main] INFO  api.test.UserTest2 - *************User Deleted*******************
+21:04:24 02:34:46 [main] INFO  api.test.UserTest - *************Creating User*******************
+21:04:24 02:34:49 [main] INFO  api.test.UserTest - *************User Created*******************
+21:04:24 02:34:49 [main] INFO  api.test.UserTest - *************Reading User*******************
+21:04:24 02:34:51 [main] INFO  api.test.UserTest - *************User Info Displayed*******************
+21:04:24 02:34:51 [main] INFO  api.test.UserTest - *************Updating User*******************
+21:04:24 02:34:52 [main] INFO  api.test.UserTest - *************User Updated*******************
+21:04:24 02:34:52 [main] INFO  api.test.UserTest - *************Deleting User*******************
+21:04:24 02:34:54 [main] INFO  api.test.UserTest - *************User Deleted*******************
